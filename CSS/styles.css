@@ -1,0 +1,125 @@
+/* Variables globales a usar para los diferentes bloques */
+:root
+{
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 20%);
+    --Dark-Grey: hsl(0, 0%, 12%);
+    --Off-Black: hsl(0, 0%, 8%);
+}
+
+/* Reseteo global para el body */
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para el body, además de aplicar centrado de la misma */
+body
+{
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: var(--White);
+    background-color: var(--Off-Black);
+}
+
+/* Estilos para el main */
+.main
+{
+    width: 330px;
+    padding: 25px;
+    background-color: var(--Dark-Grey);
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para el avatar */
+.main__imagen
+{
+    margin-bottom: 20px;
+}
+
+.main__imagen img
+{
+    width: 80px;
+    border-radius: 50%;
+}
+
+/* Estilos para los diferentes títulos del main */
+.main__h1
+{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.main__h2
+{
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--Green);
+}
+
+.main__p
+{
+    font-size: 14px;
+    margin: 25px 0;
+}
+
+/* Estilos para los enlaces de redes */
+.main__div__a
+{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--Grey);
+    list-style: none;
+    border-radius: 8px;
+    margin: 15px 0;
+    padding: 12px;
+}
+
+.main__div__a
+{
+    color: var(--White);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* Efecto hover para los links a redes sociales */
+.main__div__a:hover
+{
+    color: var(--Dark-Grey);
+    background-color: var(--Green);
+    font-weight: 800;
+}
+
+/* Media query para pantallas mayores a 768px */
+@media (min-width: 768px)
+{
+    .main
+    {
+        width: 385px;
+        padding: 40px;
+    }
+}
+
+/* Estilos para el footer */
+.attribution
+{
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a
+{
+    color: var(--Green);
+    text-decoration: none;
+}
